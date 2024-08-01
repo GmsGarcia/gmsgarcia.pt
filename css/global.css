@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Monofonto';
+  src: url('../fonts/monofonto.otf');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('../fonts/jetbrains-mono.ttf');
+}
+
+
+html {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  color: #ccc;
+  font-family: 'JetBrains Mono';
+  letter-spacing: 1px;
+  background-color: #000;
+
+  user-select: none; 
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */;
+}
+
+.field-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+fieldset {
+  margin: 2vh .5vw;
+  border: solid 5px #ccc;
+
+  legend {
+    padding: 0 .5vw;
+    font-size: 3vh;
+    font-weight: normal;
+    margin: 0
+  }
+
+  div.container {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      margin: 0 .5vw;
+      padding-left: .5vw;
+      font-size: 3vh;
+      font-weight: normal;
+      margin: 0;
+      width: calc(100% - .5vw);
+    }
+
+    a:visited, a:link {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+  }
+}
+
+fieldset#navbar {
+  div.container {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5vh;
+    
+    a:hover {
+      color: #FF5454;
+      cursor: pointer
+    }
+
+  }
+}
+
+fieldset#about-me, fieldset#projects {
+  width: 70vw;
+  height: 35vh;
+
+  div.container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+fieldset#projects {
+  width: 30vw;
+}
+
+fieldset#navbar {
+  margin-top: 1vh;
+}
+
+fieldset#socials {
+  margin-bottom: 1vh;
+}
+
+@media screen and (max-width: 670px) {
+  .field-group {
+    margin: 2vh .5vw;
+    display: block;
+  }
+
+  fieldset#about-me, fieldset#projects {
+    width: 100%
+  }
+}
