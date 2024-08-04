@@ -1,13 +1,7 @@
 @font-face {
-  font-family: 'Monofonto';
-  src: url('../fonts/monofonto.otf');
+  font-family: "JetBrains Mono";
+  src: url("../fonts/jetbrains-mono.ttf");
 }
-
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('../fonts/jetbrains-mono.ttf');
-}
-
 
 html {
   margin: 0;
@@ -17,30 +11,43 @@ html {
 body {
   background-color: #000;
   color: #ccc;
-  font-family: 'JetBrains Mono';
+  font-family: "JetBrains Mono";
   letter-spacing: 1px;
   background-color: #000;
+  user-select: none;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+}
 
-  user-select: none; 
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */;
+#tip {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  animation: blink 1000ms linear infinite alternate;
+}
+
+#tip.hidden {
+  animation: none;
+  opacity: 0;
+  transition: opacity 0.6s linear;
 }
 
 .field-group {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
+
 fieldset {
-  margin: 2vh .5vw;
-  border: solid 5px #ccc;
+  margin: 2vh 0.5vw;
+  border: solid 3px #ccc;
 
   legend {
-    padding: 0 .5vw;
-    font-size: 3vh;
+    padding: 0 0.5vw;
     font-weight: normal;
-    margin: 0
+    margin: 0;
   }
 
   div.container {
@@ -48,19 +55,17 @@ fieldset {
     flex-direction: column;
 
     a {
-      margin: 0 .5vw;
-      padding-left: .5vw;
-      font-size: 3vh;
+      margin: 0 0.5vw;
+      padding-left: 0.5vw;
       font-weight: normal;
       margin: 0;
-      width: calc(100% - .5vw);
     }
 
-    a:visited, a:link {
+    a:visited,
+    a:link {
       color: #ccc;
       text-decoration: none;
     }
-
   }
 }
 
@@ -69,16 +74,16 @@ fieldset#navbar {
     flex-direction: row;
     justify-content: space-between;
     height: 5vh;
-    
-    a:hover {
-      color: #FF5454;
-      cursor: pointer
-    }
 
+    a:hover {
+      color: #ff5454;
+      cursor: pointer;
+    }
   }
 }
 
-fieldset#about-me, fieldset#projects {
+fieldset#about-me,
+fieldset#projects {
   width: 70vw;
   height: 35vh;
 
@@ -92,21 +97,76 @@ fieldset#projects {
   width: 30vw;
 }
 
-fieldset#navbar {
-  margin-top: 1vh;
-}
-
-fieldset#socials {
-  margin-bottom: 1vh;
-}
-
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 500px) {
   .field-group {
-    margin: 2vh .5vw;
+    margin: 2vh 0.5vw;
     display: block;
   }
 
-  fieldset#about-me, fieldset#projects {
-    width: 100%
+  fieldset#about-me,
+  fieldset#projects {
+    width: auto;
+    height: auto;
+  }
+
+  #output-whoami {
+    display: block;
+  }
+}
+
+.typewriter {
+  margin: 0;
+}
+
+.typewriter:after {
+  content: "|";
+  animation: flash 500ms linear infinite alternate;
+}
+
+.typewriter.writing:after {
+  animation: none;
+}
+
+.typewriter.done:after {
+  animation: none;
+  opacity: 0;
+}
+
+.sts,
+.sts:visited {
+  padding: 0;
+  color: #ff5555 !important;
+}
+
+.link:hover {
+  background: #ccc;
+  color: #000 !important;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+
+  49% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

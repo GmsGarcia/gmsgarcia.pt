@@ -1,68 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link href="css/global.css" rel="stylesheet">
-  </head>
-  <body>
-    <fieldset id="navbar">
-      <legend>
-        <span style="color: #54FFFF">$curl </span> <span style="color: #54FF54">gmsgarcia</span><span>.</span><span style="color: #5454FF">pt</span>
-          
-      </legend> 
-      <div class="container">
-        <a>👋 Hello there! I'm Guilherme Garcia</a>
-      </div>
-    </fieldset> 
-    <div class="field-group">
-      <fieldset id="about-me">
-        <legend>
-          <span style="color: #54FFFF">$whoami</span>
-        </legend> 
-        <div class="container">
-          <a>&nbsp;</a>
-          <a>$ <span style="color: #FFFF54;">Full-Stack developer 📚</span></a>
-          <a>$ <span style="color: #FFFF54;">Lisbon, Portugal 🇵🇹</span></a>
-          <a>&nbsp;</a>
-          <a>$ <span style="color: #FFFF54;">Currently learning Rust 🦀</span></a>
-          <a>$ <span style="color: #FFFF54;">Cryptography enthusiast 🔐</span></a>
-          <a>$ <span style="color: #FFFF54;">Nvim user :P 💻</span></a>
-        </div>
-      </fieldset>
 
-      <fieldset id="projects">
-        <legend>
-          <span style="color: #54FFFF">$ls projects</span>
-        </legend> 
-        <div class="container">
-          <a>&nbsp;</a>
-          <a>$ <span style="color: #5454FF;text-decoration: underline;">PocketKings</span></a>
-          <a>...</a>
-          <a>...</a>
-          <a>&nbsp;</a>
-        </div>
-      </fieldset> 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>gmsgarcia.pt 🦭</title>
+  <link href="css/global.css" rel="stylesheet" />
+</head>
+
+<body>
+  <script src="js/typewriter.js"></script>
+  <span id="tip">PRESS SPACE TO SKIP</span>
+
+  <span class="command">
+    <span id="path-welcome"><span style="color: #54ff54">gmsgarcia@web</span><span>:</span><span
+        style="color: #5454ff">~</span>$</span>
+    <a id="cmd-welcome" class="typewriter done" style="display: inline">../welcome.sh</a>
+  </span>
+  <fieldset id="output-welcome">
+    <legend>
+      <span style="color: #54ffff">welcome</span>
+    </legend>
+    <div class="container">
+      <a>&nbsp;</a>
+      <a><span style="color: #ff5555">(• ֊ •)੭ Hello there! I'm Guilherme Garcia :))</span></a>
+      <a>&nbsp;</a>
     </div>
-    <fieldset id="socials">
+  </fieldset>
+
+  <span class="command">
+    <span id="path-whoami">
+      <span style="color: #54ff54">gmsgarcia@web</span><span>:</span><span style="color: #5454ff">~</span>$
+    </span>
+    <a id="cmd-whoami" class="typewriter done" style="display: inline">.whoami</a>
+  </span>
+  <div id="output-whoami" class="field-group">
+    <fieldset id="about-me">
       <legend>
-        <span style="color: #54FFFF">$netfetch</span>
-      </legend> 
+        <span style="color: #54ffff">about me</span>
+      </legend>
       <div class="container">
         <a>&nbsp;</a>
-        <a href="https://github.com/GmsGarcia">$ <span style="color: #5454FF;text-decoration: underline;">github</span></a>
-        <a href="https://www.linkedin.com/in/gmsgarcia/">$ <span style="color: #5454FF;text-decoration: underline;">linkedin</span></a>
+        <a>$ <span style="color: #ffff54">Full-Stack developer 📚</span></a>
+        <a>$ <span style="color: #ffff54">Lisbon, Portugal 🇵🇹</span></a>
+        <a>$
+          <span style="color: #ffff54">EPBJC - IT Systems Management and Programming Technician 🔧</span></a>
         <a>&nbsp;</a>
-      </div>
-    </fieldset> 
-    <fieldset id="footer">
-      <legend>
-        <span style="color: #54FFFF">$cat footer</span>
-      </legend> 
-      <div class="container">
-        <a>developed in a hurry by GmsGarcia :P</a>
+        <a>$
+          <span style="color: #ffff54">Currently learning low-level programming 📟</span></a>
+        <a>$ <span style="color: #ffff54">Networking enthusiast 🔐</span></a>
+        <a>$ <span style="color: #ffff54">I use Neovim btw :P 💻</span></a>
+        <a>&nbsp;</a>
       </div>
     </fieldset>
-  </body>
+
+    <fieldset id="projects">
+      <legend>
+        <span style="color: #54ffff">skills</span>
+      </legend>
+      <div class="container">
+        <a>&nbsp;</a>
+        <a>$ <span style="">TypeScript</span></a>
+        <a>$ <span style="">Rust</span></a>
+        <a>$ <span style="">Go</span></a>
+        <a>$ <span style="">Java</span></a>
+        <a>$ <span style="">Node.js</span></a>
+        <a>$ <span style="">Core web technologies</span></a>
+        <a>$ <span style="">Angular</span></a>
+        <a>$ <span style="">React</span></a>
+        <a>...</a>
+        <a>...</a>
+        <a>&nbsp;</a>
+      </div>
+    </fieldset>
+  </div>
+
+  <span class="command">
+    <span id="path-sherlock">
+      <span style="color: #54ff54">gmsgarcia@web</span><span>:</span><span style="color: #5454ff">~</span>$
+    </span>
+
+    <a id="cmd-sherlock" class="typewriter done" style="display: inline">.sherlock GmsGarcia</a>
+  </span>
+  <fieldset id="output-sherlock">
+    <legend>
+      <span style="color: #54ffff">contacts & social media</span>
+    </legend>
+    <div class="container">
+      <a>&nbsp;</a>
+      <a href="https://github.com/GmsGarcia">$
+        <span class="link" style="color: #5454ff; text-decoration: underline">GitHub</span></a>
+      <a href="https://www.linkedin.com/in/gmsgarcia/">$
+        <span class="link" style="color: #5454ff; text-decoration: underline">LinkedIn</span></a>
+      <a>&nbsp;</a>
+    </div>
+  </fieldset>
+
+  <span class="command">
+    <span id="path-footer">
+      <span style="color: #54ff54">gmsgarcia@web</span><span>:</span><span style="color: #5454ff">~</span>$
+    </span>
+
+    <a id="cmd-footer" class="typewriter done" style="display: inline">../footer.sh</a>
+  </span>
+  <fieldset id="output-footer">
+    <legend>
+      <span style="color: #54ffff">footer</span>
+    </legend>
+    <div class="container">
+      <a>&nbsp;</a>
+      <span><span style="color: #ff5555">developed in a hurry (but with much <3) by GmsGarcia :P</span>
+            |
+            <span style="color: #ff5555">© GmsGarcia <span id="year"></span></span>
+            |
+            <span style="color: #ff5555"><a class="sts link"
+                href="https://www.canadasshame.com/">#savetheseals</a></span>
+        </span>
+        <a>&nbsp;</a>
+    </div>
+  </fieldset>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+</body>
+
 </html>
