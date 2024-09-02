@@ -142,7 +142,7 @@ window.addEventListener("load", () => {
   });
 
   document.addEventListener("keydown", (e) => {
-    if (n <= chunks.length - 1 && e.code == "Space") {
+    if (n <= chunks.length - 1 && e.code == "Space" && e.code == "Enter") {
       chunks[n].skip(n);
     }
   });
