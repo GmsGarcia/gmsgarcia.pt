@@ -3,6 +3,11 @@
   src: url("../fonts/jetbrains-mono.ttf");
 }
 
+@font-face {
+  font-family: "JetBrains NerdFont";
+  src: url("../fonts/jetbrains-nerdfont.ttf");
+}
+
 html {
   margin: 0;
   scroll-behavior: smooth;
@@ -11,7 +16,7 @@ html {
 body {
   background-color: #000;
   color: #ccc;
-  font-family: "JetBrains Mono";
+  font-family: "JetBrains NerdFont";
   letter-spacing: 1px;
   background-color: #000;
   user-select: none;
@@ -95,6 +100,15 @@ fieldset#projects {
 
 fieldset#projects {
   width: 30vw;
+
+  .group {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 2.5rem;
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
