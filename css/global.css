@@ -16,6 +16,7 @@ html {
 body {
   background-color: #000;
   color: #ccc;
+  margin: 0;
   font-family: "JetBrains NerdFont";
   letter-spacing: 1px;
   background-color: #000;
@@ -26,161 +27,95 @@ body {
   /* IE 10 and IE 11 */
 }
 
-#tip {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  animation: blink 1000ms linear infinite alternate;
+pre {
+  margin: 0;
+  padding: 0;
+  font-weight: bolder; 
+  font-size: 18px
 }
 
-#tip.hidden {
-  animation: none;
-  opacity: 0;
-  transition: opacity 0.6s linear;
+img {
+  max-width: 73ch 
 }
 
-.field-group {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-fieldset {
-  margin: 2vh 0.5vw;
-  border: solid 3px #ccc;
-
-  legend {
-    padding: 0 0.5vw;
-    font-weight: normal;
-    margin: 0;
+@media screen and (max-width: 740px) {
+  pre {
+    font-size: 16px
   }
 
-  div.container {
-    display: flex;
-    flex-direction: column;
-
-    a {
-      margin: 0 0.5vw;
-      padding-left: 0.5vw;
-      font-weight: normal;
-      margin: 0;
-    }
-
-    a:visited,
-    a:link {
-      color: #ccc;
-      text-decoration: none;
-    }
+  img {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 670px) {
+  pre {
+    font-size: 14px
   }
 }
 
-fieldset#navbar {
-  div.container {
-    flex-direction: row;
-    justify-content: space-between;
-    height: 5vh;
-
-    a:hover {
-      color: #ff5454;
-      cursor: pointer;
-    }
-  }
-}
-
-fieldset#about-me,
-fieldset#projects {
-  width: 70vw;
-  height: 35vh;
-
-  div.container {
-    flex-direction: column;
-    width: 100%;
-  }
-}
-
-fieldset#projects {
-  width: 30vw;
-
-  .group {
-    display: flex;
-    flex-direction: column;
-
-    span {
-      font-size: 2.5rem;
-    }
+@media screen and (max-width: 590px) {
+  pre {
+    font-size: 12px
   }
 }
 
 @media screen and (max-width: 500px) {
-  .field-group {
-    margin: 2vh 0.5vw;
-    display: block;
-  }
-
-  fieldset#about-me,
-  fieldset#projects {
-    width: auto;
-    height: auto;
-  }
-
-  #output-whoami {
-    display: block;
+  pre {
+    font-size: 10px
   }
 }
 
-.typewriter {
-  margin: 0;
-}
-
-.typewriter:after {
-  content: "|";
-  animation: flash 500ms linear infinite alternate;
-}
-
-.typewriter.writing:after {
-  animation: none;
-}
-
-.typewriter.done:after {
-  animation: none;
-  opacity: 0;
-}
-
-.sts,
-.sts:visited {
-  padding: 0;
-  color: #ff5555 !important;
-}
-
-.link:hover {
-  background: #ccc;
-  color: #000 !important;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
+@media screen and (max-width: 450px) {
+  pre {
+    font-size: 9px
   }
 }
 
-@keyframes flash {
-  0% {
-    opacity: 0;
+@media screen and (max-width: 400px) {
+  pre {
+    font-size: 8px
   }
+}
 
-  49% {
-    opacity: 0;
-  }
+a {
+  color: #5454ff
+}
 
-  50% {
-    opacity: 1;
-  }
+.red {
+  color: #ff5555
+}
 
-  100% {
-    opacity: 1;
-  }
+.green {
+  color: #54ff54 
+}
+
+.blue {
+  color: #5454ff
+}
+
+.yellow {
+  color: #ffff54
+}
+
+.orange {
+  color: #d89a58
+}
+
+.cyan {
+  color: #54ffff
+}
+
+.purple {
+  color: #8951c1
+}
+.pink {
+  color: #d692e5
+}
+
+.gray {
+  color: #a3a3a3
+}
+
+.brown {
+  color: #9e644a
 }

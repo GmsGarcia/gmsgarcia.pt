@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>macaw 🦭</title>
+  <link href="../css/global.css" rel="stylesheet" />
+</head>
+
+<body style="display: flex; flex-direction: column; justify-content: center; align-items: center">
+  <pre id="nav">
+
++- <span class="cyan">navigation</span> ---------------------------------------------------+
+|   <span class="yellow">,___,</span>                                                        |
+|   <span class="yellow">[O.o]</span>                             <a href="../">[home]</a>  <a href="../projects.html">[projects]</a>  <a href="../index.old.html">[old]</a>  |
+|   <span class="yellow">/)_)</span>                                                         |
++---<span class="yellow">"</span>--<span class="yellow">"</span>---------------------------------------------------------+
+  </pre>
+  <pre id="projects">
++- <span class="cyan">macaw</span> --------------------------------------------------------+
+|              <span class="green">_ __ ___   __ _  ___ __ ___      __</span>               |
+|             <span class="green">| '_ ` _ \ / _` |/ __/ _` \ \ /\ / /</span>               |
+|             <span class="green">| | | | | | (_| | (_| (_| |\ V  V /</span>                |
+|             <span class="green">|_| |_| |_|\__,_|\___\__,_| \_/\_/</span>                 |
+|                                                                |
+|  <a href="https://github.com/GmsGarcia/macaw">[Repository]</a>                        Developed in C & ncurses  |
+|                                                                |
++----------------------------------------------------------------+
+
+<span class="cyan">[001] Introduction</span>
+__________________________________________________________________
+
+Macaw is a minimalist text editor currently being developed,
+drawing heavily from the core functionality of Vim. It is written
+entirely in C and leverages the ncurses library for handling
+text-based user interfaces.
+
+
+<span class="cyan">[002] Project Overview</span>
+__________________________________________________________________
+
+<span class="yellow">Key Features:</span>
+ - Written in C: chosen for performance and find control memory.
+ - Uses ncurses: ensures compatibility across various OS's.
+ - Minimalistic: focused on simplicity over complexity.
+
+      
+<span class="cyan">[003] Project Architecture</span>
+__________________________________________________________________
+      
+<span class="yellow">1. File Structure</span>
+      
+     +------------------------------------------------------+     
+     |                                                      |
+     |  macaw/                                              |
+     |  |-- src/                                            |
+     |  |   |- buffer.c                                     |
+     |  |   |- buffer.h                                     |
+     |  |   |- color.c                                      |
+     |  |   |- color.h                                      |
+     |  |   |- editor.c                                     |
+     |  |   |- editor.h                                     |
+     |  |   |- input.c                                      |
+     |  |   |- input.h                                      |
+     |  |   |- render.c                                     |
+     |  |   |- render.h                                     |
+     |  |-- main.c                                          |
+     |                                                      |
+     +------------------------------------------------------+     
+
+<span class="yellow">2. Components</span>
+
+ - Entrypoint (main.c): The entry point of the application, where
+   the editor component is called and started.
+ - Editor Module (editor.c): The heart of Macaw, the editor module
+   manages text buffers, cursor movement and operations on text.
+ - Input Handling (input.c): Processes user inputs by reading the
+   keystrokes. This module  manages Vim-like key bindings and 
+   interprets inputs based on the current mode.
+ - Rendering (render.c): Module responsible for rendering the
+   whole interface to the terminal using ncurses.
+ - Buffer Management (buffer.c): Manages the text buffer, which is
+   is the in-memory representation of the file being edited.
+ - Colors (color.c): Module responsible for initializing and 
+   managing custom colors within the terminal interface.
+
+
+<span class="cyan">[004] Screenshots</span>
+__________________________________________________________________
+
+  </pre>
+    <img src="https://raw.githubusercontent.com/GmsGarcia/macaw/master/media/screenshot_1.png" />
+  <pre id="footer" style="">
+
++- <span class="cyan">footer</span> -------------------------------------------------------+
+|                                                       <span class="orange">\\_//</span>    |
+|  Developed with <span class="red"><3</span> by Guilherme Garcia © 2024        <span class="orange">__/".</span>     |
+|  <a href="#nav">[Return to the top :P]</a>                             <span class="orange">/__ |</span>      |
+|                                                     <span class="orange">|| ||</span>      |
++----------------------------------------------------------------+
+    </pre>
+</body>
+
+</html>

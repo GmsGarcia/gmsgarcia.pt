@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 
@@ -5,16 +6,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>gmsgarcia.pt 🦭</title>
-  <link href="css/global.css" rel="stylesheet" />
+  <link href="css/global.old.css" rel="stylesheet" />
 </head>
 
 <body>
-  <span id="tip">PRESS SPACE OR ENTER TO SKIP</span>
+  <script src="js/typewriter.js"></script>
+  <span id="tip">PRESS SPACE TO SKIP</span>
 
   <span class="command">
     <span id="path-welcome"><span style="color: #54ff54">gmsgarcia@web</span><span>:</span><span
         style="color: #5454ff">~</span>$</span>
-    <a id="cmd-welcome" class="typewriter done" style="display: inline">./welcome.sh</a>
+    <a id="cmd-welcome" class="typewriter done" style="display: inline">../welcome.sh</a>
   </span>
   <fieldset id="output-welcome">
     <legend>
@@ -31,7 +33,7 @@
     <span id="path-whoami">
       <span style="color: #54ff54">gmsgarcia@web</span><span>:</span><span style="color: #5454ff">~</span>$
     </span>
-    <a id="cmd-whoami" class="typewriter done" style="display: inline">whoami</a>
+    <a id="cmd-whoami" class="typewriter done" style="display: inline">.whoami</a>
   </span>
   <div id="output-whoami" class="field-group">
     <fieldset id="about-me">
@@ -48,7 +50,7 @@
         <a>$
           <span style="color: #ffff54">Currently learning low-level programming 📟</span></a>
         <a>$ <span style="color: #ffff54">Networking enthusiast 🔐</span></a>
-        <a>$ <span style="color: #ffff54">I use Neovim btw :P 💻</span></a>
+        <a>$ <span style="color: #ffff54">I use Neovim btw :P 💻</span></a>
         <a>&nbsp;</a>
       </div>
     </fieldset>
@@ -58,44 +60,17 @@
         <span style="color: #54ffff">skills</span>
       </legend>
       <div class="container">
-        <div class="group">
-          <a>WebDev</a>
-          <div>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-        <div class="group">
-          <a>Low-level</a>
-          <div>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-        <div class="group">
-          <a>Tools</a>
-          <div>
-            <span></span>
-            <span></span>
-            <span>󰚯</span>
-            <span>󰦱</span>
-          </div>
-        </div>
-        <div class="group">
-          <a>Tools</a>
-          <div>
-            <span></span>
-            <span></span>
-            <span>󰚯</span>
-            <span>󰦱</span>
-          </div>
-        </div>
+        <a>&nbsp;</a>
+        <a>$ <span style="">TypeScript</span></a>
+        <a>$ <span style="">Rust</span></a>
+        <a>$ <span style="">Go</span></a>
+        <a>$ <span style="">Java</span></a>
+        <a>$ <span style="">Node.js</span></a>
+        <a>$ <span style="">Core web technologies</span></a>
+        <a>$ <span style="">Angular</span></a>
+        <a>$ <span style="">React</span></a>
+        <a>...</a>
+        <a>...</a>
         <a>&nbsp;</a>
       </div>
     </fieldset>
@@ -106,7 +81,7 @@
       <span style="color: #54ff54">gmsgarcia@web</span><span>:</span><span style="color: #5454ff">~</span>$
     </span>
 
-    <a id="cmd-sherlock" class="typewriter done" style="display: inline">sherlock GmsGarcia</a>
+    <a id="cmd-sherlock" class="typewriter done" style="display: inline">.sherlock GmsGarcia</a>
   </span>
   <fieldset id="output-sherlock">
     <legend>
@@ -127,7 +102,7 @@
       <span style="color: #54ff54">gmsgarcia@web</span><span>:</span><span style="color: #5454ff">~</span>$
     </span>
 
-    <a id="cmd-footer" class="typewriter done" style="display: inline">./footer.sh</a>
+    <a id="cmd-footer" class="typewriter done" style="display: inline">../footer.sh</a>
   </span>
   <fieldset id="output-footer">
     <legend>
@@ -141,40 +116,17 @@
             |
             <span style="color: #ff5555"><a class="sts link"
                 href="https://www.canadasshame.com/">#savetheseals</a></span>
+            |
+            <span style="color: #ff5555"><a class="sts link"
+                href="./">new website :D</a></span>
         </span>
         <a>&nbsp;</a>
     </div>
   </fieldset>
-  <pre style="font-weight: bolder; font-size: 18px">
-+- projects --+
-|   ,___,     |
-|   [O.o]     |
-|   /) )      |
-+---"--"------+
-
-+- about me ----------------------------------------------------+
-|                                                               |
-|                                         Full-Stack developer  |
-|                                             Lisbon, Portugal  |
-|      EPBJC, IT Systems Management and Programming Technician  |
-|                                                               |
-|                     Currently learning low-level programming  | 
-|                                        Networking enthusiast  | 
-|                                          I use Neovim btw :P  | 
-|             Mr. Seal                                          |
-|      +--+  /                                                  |
-|      |  |                  _                 _                |
-|     _+__+__              ><_>              _(_)               |
-|    +_______+                              (_)@(_)             |
-|     /  ..\                                  (_)\              |
-|    /   =-=|     _                              |              |
-|   /     /      <_><                           \|//            |
-|   |      \                                   \\|//            |
-+---------------------------------------------------------------+
- </pre>
   <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
   </script>
 </body>
 
 </html>
+
