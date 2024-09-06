@@ -71,18 +71,23 @@ __________________________________________________________________
 
 <span class="yellow">2. Components</span>
 
- - Entrypoint (main.c): The entry point of the application, where
+ - <span class="orange">Entrypoint (main.c):</span> The entry point of the application, where
    the editor component is called and started.
- - Editor Module (editor.c): The heart of Macaw, the editor module
+
+ - <span class="orange">Editor Module (editor.c):</span> The heart of Macaw, the editor module
    manages text buffers, cursor movement and operations on text.
- - Input Handling (input.c): Processes user inputs by reading the
+
+ - <span class="orange">Input Handling (input.c):</span> Processes user inputs by reading the
    keystrokes. This module  manages Vim-like key bindings and 
    interprets inputs based on the current mode.
- - Rendering (render.c): Module responsible for rendering the
+
+ - <span class="orange">Rendering (render.c):</span> Module responsible for rendering the
    whole interface to the terminal using ncurses.
- - Buffer Management (buffer.c): Manages the text buffer, which is
+
+ - <span class="orange">Buffer Management (buffer.c):</span> Manages the text buffer, which is
    is the in-memory representation of the file being edited.
- - Colors (color.c): Module responsible for initializing and 
+      
+ - <span class="orange">Colors (color.c):</span> Module responsible for initializing and 
    managing custom colors within the terminal interface.
 
 
