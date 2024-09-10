@@ -20,106 +20,106 @@ body {
   font-family: "JetBrains NerdFont";
   letter-spacing: 1px;
   background-color: #000;
-  user-select: none;
+  /*user-select: none;
   -webkit-user-select: none;
-  /* Safari */
-  -ms-user-select: none;
-  /* IE 10 and IE 11 */
+  -ms-user-select: none;*/
 }
 
 pre {
   margin: 0;
   padding: 0;
-  font-weight: bolder; 
-  font-size: 18px
+  font-weight: bolder;
+  font-size: 18px;
 }
 
 img {
-  max-width: 73ch 
+  max-width: 73ch;
 }
 
 @media screen and (max-width: 740px) {
   pre {
-    font-size: 16px
+    font-size: 16px;
   }
 
   img {
     max-width: 90%;
   }
 }
+
 @media screen and (max-width: 670px) {
   pre {
-    font-size: 14px
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 590px) {
   pre {
-    font-size: 12px
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 500px) {
   pre {
-    font-size: 10px
+    font-size: 10px;
   }
 }
 
 @media screen and (max-width: 450px) {
   pre {
-    font-size: 9px
+    font-size: 9px;
   }
 }
 
 @media screen and (max-width: 400px) {
   pre {
-    font-size: 8px
+    font-size: 8px;
   }
 }
 
 a {
-  color: #5454ff
+  color: #5454ff;
 }
 
 .red {
-  color: #ff5555
+  color: #ff5555;
 }
 
 .green {
-  color: #54ff54 
+  color: #54ff54;
 }
 
 .blue {
-  color: #5454ff
+  color: #5454ff;
 }
 
 .light-blue {
-  color: #4f8cef
+  color: #4f8cef;
 }
 
 .yellow {
-  color: #ffff54
+  color: #ffff54;
 }
 
 .orange {
-  color: #d89a58
+  color: #d89a58;
 }
 
 .cyan {
-  color: #54ffff
+  color: #54ffff;
 }
 
 .purple {
-  color: #8951c1
+  color: #8951c1;
 }
+
 .pink {
-  color: #d692e5
+  color: #d692e5;
 }
 
 .gray {
-  color: #a3a3a3
+  color: #a3a3a3;
 }
 
 .brown {
-  color: #9e644a
+  color: #9e644a;
 }
