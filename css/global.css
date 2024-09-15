@@ -32,6 +32,24 @@ pre {
   font-size: 18px;
 }
 
+.eyes {
+  width: 3.3ch; /* Width of the image as 20 characters wide */
+  height: 1em; /* Height of the image to match one line of text */
+  vertical-align: middle; /* Align image with text */
+  transform: scaleX(-1);
+}
+
+.badges {
+  display: flex;
+  width: 719px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px
+}
+.badge {
+  width: calc(100% / 6);
+}
+
 img {
   max-width: 73ch;
 }
@@ -39,6 +57,10 @@ img {
 @media screen and (max-width: 740px) {
   pre {
     font-size: 16px;
+  }
+
+  .badges {
+    width: 646px;
   }
 
   img {
@@ -50,11 +72,19 @@ img {
   pre {
     font-size: 14px;
   }
+
+  .badges {
+    width: 574px;
+  }
 }
 
 @media screen and (max-width: 590px) {
   pre {
     font-size: 12px;
+  }
+  
+  .badges {
+    width: 488px;
   }
 }
 
@@ -62,17 +92,29 @@ img {
   pre {
     font-size: 10px;
   }
+  
+  .badges {
+    width: 415px;
+  }
 }
 
 @media screen and (max-width: 450px) {
   pre {
     font-size: 9px;
   }
+  
+  .badges {
+    width: 380px;
+  }
 }
 
 @media screen and (max-width: 400px) {
   pre {
     font-size: 8px;
+  }
+
+  .badges {
+    width: 330px;
   }
 }
 
